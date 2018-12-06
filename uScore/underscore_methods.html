@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.9.1/underscore-min.js"></script>    
+
+</head> 
+
+<body> 
+        <script> 
+                var count = _.each([1, 2, 3], alert);
+                console.log(count)
+
+                var res = _.map([1, 2, 3, 4], function(num){ return num * 2; }); 
+                console.log(res)
+
+                var sum = _.reduce([1, 2, 3], function(memo, num){ return memo + num; }, 10);
+                console.log(sum);
+
+                var even = _.find([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+                console.log(even)
+
+                var evens = _.filter([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+                console.log(evens)
+
+                var odds = _.reject([1, 2, 3, 4, 5, 6], function(num){ return num % 2 == 0; });
+                console.log(odds)
+	</script> 
+</body> 
+
+</html> 
